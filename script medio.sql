@@ -80,7 +80,3 @@ fecha_inicio date not null,
 fecha_fin date not null, 
 costo_inscripcion float not null, 
 sede_competencia varchar(50) not null);
-
-
---control de versiones
---0.1 primera creacion del script muchas tablas le faltan los tipo de datos y dudas. 22-10-2016
