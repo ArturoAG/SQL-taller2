@@ -74,9 +74,23 @@ Exietencias integer(3) not null,
 Descripcion varchar(50) not null
 );
 
-create table compatencia(
-id_competencia int not null primary key, 
-fecha_inicio date not null, 
-fecha_fin date not null, 
-costo_inscripcion float not null, 
-sede_competencia varchar(50) not null);
+create table competencia(
+id_Competencia Int not null primary key,
+nombre_Competencia Varchar(100) not null,
+fecha_Inicio_Competencia Date not null, 
+fecha_Fin_Competencia Date not null, 
+nombre_Lugar_Sede Varchar(100) not null,
+dirección_Sede varchar(300) not null, 
+costo_Inscripcion float not null, 
+id_Competidor int not null, 
+nombre_competidor Varchar(100) not null,
+fecha_nacimiento Date not null, 
+sexo_Competidor Date not null, 
+teléfono_competidor Varchar(100) not null,
+peso_competidor float not null, 
+estatura_competidor Float not null, 
+email_competidor Varchar(100) not null, 
+costo_inscripcion_categoria Float not null, 
+id_categoria_De_Competencia Int not null, 
+nombre_categoria_competencia Varchar(100) not null
+id_clasificación_de_categoria Varchar(100) not null);
