@@ -91,3 +91,17 @@ costo_inscripcion_categoria Float not null,
 id_categoria_De_Competencia Int not null, 
 nombre_categoria_competencia Varchar(100) not null
 id_clasificación_de_categoria Varchar(100) not null);
+
+create table Login(
+usuario varchar(20) not null, 
+conatraseña varchar(10) not null);
+
+create table Aparatos(
+id int(6) not null primary key, 
+tipo varchar(30)not null, 
+cantidad int(6) not null, 
+precio double(6) not null, 
+nombre varchar(40) not null, 
+proveedor varchar(40) not null, 
+observaciones varchar(300) not null);
+
