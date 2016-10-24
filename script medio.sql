@@ -16,19 +16,17 @@ estado_salud varchar(100) not null, --preguntar
 );
 
 create table Entrenador(
-id_Entrenado int not null primary key,
-Nombre_Ent varchar(20) not null, 
-Apellido_Ent varchar(20) not null, 
+id_Ent int not null primary key,
+Nombre_Ent varchar(60) not null, 
 Fecha_nac date not null, 
-Direccion varchar(100) not null, 
-Telefono int not null, 
-sexo int not null, --como se almacenara ese dato
+Direccion varchar(120) not null, 
+Telefono varchar(20) not null, 
+sexo int not null,
 Experiencia varchar(1000) not null, 
-certificaciones varchar(500) not null,-- se debera cambiar el nombre al E-R, se encuentra como observaciones
+certificaciones varchar(500) not null,
 turno varchar(10) not null, 
 fecha_ing date not null, 
-fotografia longblob not null not null
-);
+fotografia longblob not null);
 
 create table Rutina( --agregar tipo de dato que require
 ID_Rutina int not null primary key, 
