@@ -5,15 +5,14 @@ create database 300gym;
 use 300gym;
 
 create table socio(
-ID_Socio int not null primary key, 
-Nombre_Socio varchar(40) not null, --normalización falta
-fecha_nac date not null, 
-genero_socio varchar(10) not null, 
-correo_socio varchar(30) not null, 
-Telefono_socio int not null, 
-Notas varchar(100) not null, 
-estado_salud varchar(100) not null, --preguntar
-);
+ID_Socio varchar(9) not null primary key,
+Nombre_Socio varchar(40) not null, 
+Teléfono varchar(13) not null, 
+Correo varchar(40) not null, 
+Genero varchar(1) not null, 
+Fecha_nacimiento date not null, 
+Estado_salud varchar(40) not null, 
+Notas varchar(40) not null);
 
 create table Entrenador(
 id_Ent int not null primary key,
